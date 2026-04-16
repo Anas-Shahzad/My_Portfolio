@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas | Portfolio</title>
+    <link rel="icon" type="image/png" href="Main_P/icons8-portfolio-50.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+</head>
+<body>
+    <header>
+        <h1><span class="name-first">Anas</span><span class="name-last"> Shahzad</span></h1>
+        <nav>
+            <a href="#home"><span>Home</span></a>
+            <a href="#about"><span>About</span></a>
+            <a href="#projects"><span>Projects</span></a>
+            <a href="#contact"><span>Contact</span></a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="Main_P/My_profile.jpeg" alt="Profile Picture">
+        <div class="hero-text">
+            <h2>
+                I am 
+                <span>
+                    <span>Anas Shahzad</span>
+                    <span>a Coder</span>
+                    <span>a Graphics Designer</span>
+                    <span>a Programmer</span>
+                    <span>a developer</span>
+                </span>
+            </h2>
+            <h2>Welcome to My Portfolio 👋</h2>
+            <p>
+                Hi, I'm <strong>Anas Shahzad</strong> — a creative developer and designer who blends art with code.  
+                I specialize in merging complex backend logic with smooth, responsive designs using the MERN Stack.
+                Scroll down to learn more about me and my work!
+            </p>
+            <a href="Main_P/Updated_CV.pdf" download class="btn-cv">
+                <i class="fa-solid fa-download"></i> Download CV
+            </a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Main_P/MY_PIC.png" alt="About Image">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    I am a dedicated <strong>Software Engineer</strong> who bridges the gap between creative design and technical efficiency. I specialize in using modern frameworks like React and Node.js to build applications that are fast, responsive, and reliable. My passion lies in pushing the boundaries of web development, from optimizing database queries to refining UI interactions. I am constantly learning new technologies to stay ahead of the curve.
+                </p>
+            </div>
+        </div>
+            
+        <div class="skills-section">
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <div class="skills-category">
+                    <h3>💻 Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"><span>MongoDB</span></div>
+                        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>🛠️ Creative & Technical Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill bright-bg"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop"><span>Adobe Photoshop</span></div>
+                        <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/canva.svg" alt="Canva"><span>Canva</span></div>
+                        <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"><span>Linux</span></div>
+                        <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlesearchconsole.svg" alt="SEO"><span>SEO</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-contents" id="certificates">
+                <h3 style="color: #ff4b4b; margin-bottom: 20px;">🏆 My Certifications</h3>
+                <div class="skills-grid">
+                    <div class="cert-card skill">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"> <span class="cert-issuer">Google</span>
+                        <span class="cert-title">Project Management</span>
+                        <a href="Certificates/Google Project Management.pdf" class="cert-link">Click to view</a>
+                    </div>
+                    <div class="cert-card skill">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+                        <span class="cert-issuer">Microsoft</span>
+                        <span class="cert-title">Office 365</span>
+                        <a href="Certificates/Microsoft office 365.pdf" class="cert-link">Click to view</a>
+                    </div>
+                    <div class="cert-card skill">
+                        <img src="https://logo.svgcdn.com/simple-icons/freecodecamp-dark.svg" alt="freeCodeCamp logo" width="120" />
+                        <span class="cert-issuer">freeCodeCamp</span>
+                        <span class="cert-title">Full Stack Web Dev</span>
+                        <a href="in_progress.html" class="cert-link">Click to view</a>
+                    </div>
+                    <div class="cert-card skill">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg" alt="Cisco">
+                        <span class="cert-issuer">Cisco</span>
+                        <span class="cert-title">CCNA Networking</span>
+                        <a href="in_progress.html" class="cert-link">Click to view</a>
+                    </div>
+                    <div class="cert-card skill">
+                        <img src="Main_P/UM_logo.png" alt="U-M">
+                        <span class="cert-issuer">University of Michigan</span>
+                        <span class="cert-title">Python</span>
+                        <a href="Certificates/python programming UM.pdf" class="cert-link">Click to view</a>
+                    </div>
+                    <div class="cert-card skill">
+                        <img src="Main_P/iese-business-school-logo-png-transparent.png" alt="FreeCodeCamp">
+                        <span class="cert-issuer">IESE Business School</span>
+                        <span class="cert-title">Art of Storytelling</span>
+                        <a href="Certificates/The Art of Storytelling.pdf" class="cert-link">Click to view</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="tab-contents" id="experience">
+            <h3 style="color: #ff4b4b; margin-bottom: 20px;">💼 Work Experience</h3>
+            
+            <div class="exp-grid">
+                
+                <div class="skill exp-wide">
+                    <h4 style="color: #fff; font-size: 18px; margin-bottom: 5px;">Software Developer</h4>
+                    <p class="company-name" style="margin-bottom: 15px; color: red;">at Developer Hub Corporation</p>
+                    <p class="exp-desc" style="font-size: 13px; line-height: 1.5; color: #ddd;">
+                        Working on full-stack web development projects, optimizing database queries, and collaborating with cross-functional teams to deliver high-quality software solutions.
+                    </p>
+                </div>
+
+                <div class="skill exp-wide">
+                    <h4 style="color: #fff; font-size: 18px; margin-bottom: 5px;">Blockchain Analyst & Web3 Participant</h4>
+                    <p class="company-name" style="margin-bottom: 15px; color: red;">at Matic Fortune (Decentralized Platform)</p>
+                    <p class="exp-desc" style="font-size: 13px; line-height: 1.5; color: #ddd;">
+                        Engaged with <strong>Web3 architecture</strong> on the Polygon (MATIC) network to analyze <strong>Smart Contract</strong> workflows. Managed decentralized asset distributions through <strong>non-custodial wallets</strong>.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>🌐 Personal Portfolio Website</h3>
+                    <p>A clean, responsive portfolio showcasing your skills, projects, and contact form — built with HTML, CSS, and JS.</p>
+                </div>
+            </a>
+
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>📋 Task Management System</h3>
+                    <p>A full-stack app to efficiently organize tasks and track workflows with secure authentication, built with Node.js and React.</p>
+                </div>
+            </a>
+
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>☁️ Live Weather App</h3>
+                    <p>A responsive app that fetches real-time weather updates and forecasts for any location using APIs — built with JavaScript.</p>
+                </div>
+            </a>
+            
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>🧮 Advanced Calculator</h3>
+                    <p>A responsive calculator for complex mathematical operations featuring a clean interface — built with HTML, CSS, and JS.</p>
+                </div>
+            </a>
+
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>💰 Expense Tracker</h3>
+                    <p>A console-based application to track daily expenses, manage budgets and generate summary reports; built efficiently with C++.</p>
+                </div>
+            </a>
+
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>🔐 Modern Login Page</h3>
+                    <p>A sleek, responsive authentication interface with glassmorphism effects and smooth animations — built with HTML & CSS.</p>
+                </div>
+            </a>
+
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>🕰️ Digital Clock</h3>
+                    <p>A live digital clock that updates every second — styled with glowing glass effects and smooth animations.</p>
+                </div>
+            </a>
+
+            <a href="error_Page.html">
+                <div class="project-card">
+                    <h3>🎓 AWKUM GPA Calculator</h3>
+                    <p>A web app that calculates GPA and CGPA according to official university grading standards — built with Python and Flask.</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!</p>
+
+        <div class="contact-links">
+            <a href="mailto:AnasShahzad3600@outlook.com?subject=Hello%20Anas&body=Hi%20there!%20I%20loved%20your%20portfolio.">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://www.instagram.com/anasshahzad67/" target="_blank" data-instagram="true">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://github.com/Anas-Shahzad" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/anas-shahzad-711023355/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+
+    </section>
+
+    <footer>© 2026 Anas Shahzad. All Rights Reserved.</footer>
+
+    <script>
+        // Smooth Scroll Logic
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80, // offset for fixed header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Tab Switching Logic
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Open Instagram profile in the app on mobile with web fallback
+        const instagramLink = document.querySelector('[data-instagram="true"]');
+        if (instagramLink) {
+            instagramLink.addEventListener('click', function (e) {
+                const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+                if (!isMobile) {
+                    return;
+                }
+
+                e.preventDefault();
+
+                const appUrl = 'instagram://user?username=anasshahzad67';
+                const webUrl = this.getAttribute('href');
+
+                window.location.href = appUrl;
+                setTimeout(() => {
+                    window.location.href = webUrl;
+                }, 500);
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification In Progress | Anas Shahzad</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        /* =========================
+           RESET & BASE STYLING
+           ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-image: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 70%);
+        }
+
+        .container {
+            text-align: center;
+            max-width: 700px;
+            padding: 40px 20px;
+            animation: fadeUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* =========================
+           PULSING ANIMATION (Red)
+           ========================= */
+        .status-indicator {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* The center solid circle with Icon */
+        .status-dot {
+            width: 60px;
+            height: 60px;
+            background-color: #ff4b4b; /* Your Brand Red */
+            border-radius: 50%;
+            z-index: 2;
+            box-shadow: 0 0 25px rgba(255, 75, 75, 0.6);
+            
+            /* Center the icon */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* The pulsing rings */
+        .status-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px; /* Start same size as dot */
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #ff4b4b;
+            opacity: 0;
+            animation: pulseWave 2.5s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        /* A second ring for a more complex effect */
+        .status-ring:nth-child(2) {
+            animation-delay: 1.25s;
+        }
+
+        /* =========================
+           TYPOGRAPHY
+           ========================= */
+        h1 {
+            font-family: 'Arvo', serif;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        p.subtext {
+            color: #888;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 50px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* =========================
+           BUTTON STYLING
+           ========================= */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 35px;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ddd;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-back:hover {
+            border-color: #ff4b4b;
+            color: #fff;
+            background: rgba(255, 75, 75, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(255, 75, 75, 0.2);
+        }
+
+        /* =========================
+           KEYFRAMES
+           ========================= */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulseWave {
+            0% { width: 60px; height: 60px; opacity: 0.8; border-width: 2px; }
+            100% { width: 140px; height: 140px; opacity: 0; border-width: 0px; }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            p.subtext { font-size: 1rem; padding: 0 15px; }
+            .status-indicator { margin-bottom: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="status-indicator">
+            <div class="status-dot">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            
+            <div class="status-ring"></div>
+            <div class="status-ring"></div>
+        </div>
+
+        <h1>IN PROGRESS</h1>
+        
+        <p class="subtext">
+            I am currently enrolled in this certification program and actively advancing my skills. 
+            The official credential will be available here upon completion.
+        </p>
+
+        <a href="index.html#experience" class="btn-back">
+            <i class="fa-solid fa-arrow-left"></i> Back to Certificates
+        </a>
+
+    </div>
+
+</body>
+</html>
